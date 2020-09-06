@@ -24,3 +24,12 @@ ventas = {
     Noviembre: 91000,
     Diciembre: 21000
 }
+
+
+data_user = ARGV[0].to_i
+
+def filter( param, user )
+   hash_new = param.select { | key, value | value if value > user }
+end
+
+puts filter( ventas, data_user )
