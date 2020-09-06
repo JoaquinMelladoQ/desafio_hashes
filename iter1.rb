@@ -20,3 +20,7 @@ ventas = {
     Noviembre: 91000,
     Diciembre: 21000
 }
+
+ventas.each do | key, value|
+    print "#{value} " if ( value > 45000 )
+end 

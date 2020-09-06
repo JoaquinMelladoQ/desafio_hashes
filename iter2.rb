@@ -22,3 +22,5 @@ ventas = {
     Noviembre: 91000,
     Diciembre: 21000
 }
+
+puts ventas.select { | key, value | value > 45000 }.keys.join(" ")
