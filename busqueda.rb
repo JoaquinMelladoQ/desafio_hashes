@@ -22,3 +22,10 @@ ventas = {
     Noviembre: 91000,
     Diciembre: 21000
 }
+
+
+ARGV.each do | e |
+    match = ventas.invert[ e.to_i ]
+    print match ? match : ' not found'
+end
+
