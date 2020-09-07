@@ -1,13 +1,3 @@
-# Crear un programa llamado busqueda.rb que pueda buscar a que mes pertenece una o mas cifras
-# específica. En caso de no encontrarlo mostrar el mensaje "no encontrado"
-# Uso:
-# ruby busqueda.rb 15000 31000 27000
-# Enero no encontrado no encontrado
-# Se asumirá que en ningún mes la venta se repite.
-# Tips:
-# Se evalúa la salida en pantalla por lo que se debe respetar los mensajes.
-# Se evaluará con un hash distinto al mostrado.
-
 ventas = {
     Enero: 15000,
     Febrero: 22000,
