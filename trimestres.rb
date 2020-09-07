@@ -25,18 +25,10 @@ ventas = {
     Diciembre: 21000
 }
 
-quarters = []
+quarter = []
 
 ventas.values.each_slice(3) do | param |
-    quarters.push( param )
+    quarter.push( param )
 end
 
-# puts quarters
-
-quarters_sum = []
-
-quarters.each do | e |
-    quarters_sum.push( e.sum )
-end
-
-puts quarters_sum
+puts quarter
