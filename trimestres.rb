@@ -35,8 +35,18 @@ end
 
 quarter_sum = []
 
-quarters.each do | e |
+quarter.each do | e |
     quarter_sum.push( e.sum )
 end
 
-puts quarter_sum
+# puts quarter_sum
+
+quarters = {}
+i = 1
+
+quarter_sum.each do | e |
+    quarters["Q#{ i }"] = e
+    i += 1
+end
+
+print "#{quarters}\n"
